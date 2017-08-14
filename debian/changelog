@@ -1,3 +1,9 @@
+gdebi (0.9.5.7+nmu1pardus1) onyedi; urgency=medium
+
+  * Add .drone.yml
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Mon, 14 Aug 2017 16:17:07 +0300
+
 gdebi (0.9.5.7+nmu1) unstable; urgency=medium
 
   [ Petter Reinholdtsen ]
