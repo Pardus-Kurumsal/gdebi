@@ -1,3 +1,9 @@
+gdebi (0.9.5.7+nmu1pardus2) onyedi; urgency=medium
+
+  * Update desktop file in order to fix gui failure
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Mon, 14 Aug 2017 16:43:21 +0300
+
 gdebi (0.9.5.7+nmu1pardus1) onyedi; urgency=medium
 
   * Add .drone.yml
