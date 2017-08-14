@@ -4,6 +4,8 @@ build:
     volumes:
       - /tmp/packages:/packages
     commands:
+      - localedef -i en_US -f UTF-8 en_US.UTF-8
+      - export LANG=en_US.UTF-8
       - echo "TODO lintian -i /packages/$(basename $DRONE_REPO)/*.changes"
       - apt-get update
       - apt-get install build-essential equivs devscripts
