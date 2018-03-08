@@ -2,7 +2,7 @@ build:
   package:
     image: pardus/pardus-package
     volumes:
-      - /tmp/packages:/packages
+      - /packages:/packages
     commands:
       - localedef -i en_US -f UTF-8 en_US.UTF-8
       - export LANG=en_US.UTF-8
@@ -20,14 +20,14 @@ build:
   test:
     image: pardus/pardus-test
     volumes:
-      - /tmp/packages:/packages
+      - /packages:/packages
     commands:
       - apt-get update
       - apt-get install /packages/$(basename $DRONE_REPO)/*.deb
   deploy:
     image: pardus/pardus-test
     volumes:
-      - /tmp/packages:/packages
+      - /packages:/packages
     commands:
       - apt-get update
       - echo "TODO deployment container (pardus/pardus-deploy) is yet to be prepared"
